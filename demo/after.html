@@ -51,6 +51,7 @@
     mask-composite: exclude; animation: beam-spin 4.5s linear infinite; pointer-events: none; z-index: 5;
   }
   @keyframes beam-spin { to { --beam-angle: 360deg; } }
+  @media (prefers-reduced-motion: reduce) { .card.featured::before { animation: none; } }
 
   .badge { position: absolute; top: 20px; right: 20px; border-radius: 999px; padding: 2px 8px; font-size: 10px; text-transform: uppercase; letter-spacing: .06em; color: #fff; background: var(--pact-strong); }
 

@@ -27,6 +27,12 @@ What changed, and why:
 
 The "after" is a faithful standalone build of a live product's pricing page, so this is craft on a real surface, not a toy made to win the comparison. The point is the judgment, not these exact pixels. Source for both is in [`demo/`](demo).
 
+That beam on the recommended tier is real motion, not a painted-on glow:
+
+![A soft purple beam tracing slowly around the border of the recommended pricing tier](demo/beam.gif)
+
+It is the kind of motion the standard argues for: an animated registered `@property` angle driving a masked conic gradient, slow and quiet so it guides the eye to one tier without nagging, and switched off entirely under `prefers-reduced-motion`.
+
 ## What is inside
 
 ```
