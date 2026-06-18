@@ -1,0 +1,21 @@
+{
+  "name": "taste",
+  "description": "A design-engineering standard for Claude. Senior-level front-end and visual craft: avoid generic AI defaults, motion that feels right, real accessibility, and a render-and-compare verification habit.",
+  "version": "1.0.0",
+  "author": {
+    "name": "John Wright-Nyingifa",
+    "url": "https://twitter.com/itriple9"
+  },
+  "homepage": "https://github.com/GambogeSplash/taste",
+  "license": "MIT",
+  "keywords": [
+    "design",
+    "frontend",
+    "ui",
+    "ux",
+    "animation",
+    "accessibility",
+    "design-engineering",
+    "skill"
+  ]
+}
