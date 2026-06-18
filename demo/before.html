@@ -7,54 +7,71 @@
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: Inter, system-ui, -apple-system, sans-serif; background: #ffffff; color: #1e293b; }
-  .wrap { max-width: 1100px; margin: 0 auto; padding: 80px 24px; text-align: center; }
-  .badge-top { display: inline-block; background: linear-gradient(90deg, #7c3aed, #4f46e5); color: #fff; padding: 6px 14px; border-radius: 999px; font-size: 13px; font-weight: 600; margin-bottom: 20px; }
-  h1 { font-size: 44px; font-weight: 800; background: linear-gradient(90deg, #7c3aed, #4f46e5); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 12px; }
-  .sub { color: #64748b; font-size: 18px; margin-bottom: 48px; }
-  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; text-align: left; }
-  .card { border: 1px solid #e2e8f0; border-radius: 16px; padding: 32px; box-shadow: 0 4px 12px rgba(0,0,0,.05); background: #fff; }
-  .card.popular { border: 2px solid transparent; background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #7c3aed, #4f46e5) border-box; }
-  .pop-label { color: #7c3aed; font-weight: 700; font-size: 13px; margin-bottom: 8px; }
-  .plan { font-size: 20px; font-weight: 700; margin-bottom: 4px; }
-  .desc { color: #64748b; font-size: 14px; margin-bottom: 20px; }
-  .price { font-size: 40px; font-weight: 800; margin-bottom: 2px; }
-  .price span { font-size: 16px; font-weight: 500; color: #64748b; }
-  ul { list-style: none; margin: 24px 0; }
-  li { padding: 8px 0; color: #475569; font-size: 15px; display: flex; gap: 8px; }
-  li:before { content: "\2713"; color: #7c3aed; }
-  .btn { display: block; text-align: center; padding: 12px; border-radius: 10px; font-weight: 600; text-decoration: none; cursor: pointer; }
-  .btn.primary { background: linear-gradient(90deg, #7c3aed, #4f46e5); color: #fff; }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 72px 24px; text-align: center; }
+  .badge-top { display: inline-block; background: linear-gradient(90deg, #6366f1, #3b82f6); color: #fff; padding: 6px 14px; border-radius: 999px; font-size: 13px; font-weight: 600; margin-bottom: 20px; }
+  h1 { font-size: 44px; font-weight: 800; background: linear-gradient(90deg, #6366f1, #3b82f6); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 12px; }
+  .sub { color: #64748b; font-size: 18px; max-width: 620px; margin: 0 auto 48px; line-height: 1.5; }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: left; }
+  .card { border: 1px solid #e2e8f0; border-radius: 16px; padding: 28px; box-shadow: 0 4px 14px rgba(0,0,0,.06); background: #fff; display: flex; flex-direction: column; }
+  .card.popular { border: 2px solid transparent; background: linear-gradient(#fff, #fff) padding-box, linear-gradient(135deg, #6366f1, #3b82f6) border-box; }
+  .pop-label { color: #6366f1; font-weight: 700; font-size: 12px; margin-bottom: 8px; }
+  .plan { font-size: 19px; font-weight: 700; margin-bottom: 2px; }
+  .desc { color: #64748b; font-size: 14px; margin-bottom: 2px; }
+  .band { color: #94a3b8; font-size: 13px; margin-bottom: 18px; }
+  .price { font-size: 38px; font-weight: 800; margin-bottom: 18px; }
+  .price span { font-size: 15px; font-weight: 500; color: #64748b; }
+  ul { list-style: none; margin-bottom: 24px; }
+  li { padding: 7px 0; color: #475569; font-size: 14px; display: flex; gap: 8px; align-items: flex-start; }
+  li:before { content: "\2713"; color: #6366f1; font-weight: 700; }
+  .btn { display: block; text-align: center; padding: 11px; border-radius: 10px; font-weight: 600; font-size: 14px; text-decoration: none; cursor: pointer; margin-top: auto; }
+  .btn.primary { background: linear-gradient(90deg, #6366f1, #3b82f6); color: #fff; }
   .btn.ghost { background: #f1f5f9; color: #1e293b; }
 </style>
 </head>
 <body>
   <div class="wrap">
     <span class="badge-top">&#10024; Simple pricing</span>
-    <h1>Pricing that scales with you</h1>
-    <p class="sub">Start free. Upgrade when you're ready.</p>
+    <h1>Priced against what's at stake</h1>
+    <p class="sub">One flat fee per event, by how much you raise. Or pay 1.5% only when a sponsor signs. Either way, you only pay when it pays off.</p>
     <div class="grid">
+
       <div class="card">
-        <div class="plan">Starter</div>
-        <div class="desc">For trying things out</div>
-        <div class="price">$0 <span>/mo</span></div>
-        <ul><li>1 project</li><li>Community support</li><li>Basic analytics</li></ul>
+        <div class="plan">Community</div>
+        <div class="desc">Meetups &amp; summits</div>
+        <div class="band">Up to $50k raised</div>
+        <div class="price">$99 <span>/event</span></div>
+        <ul><li>AI sponsor discovery</li><li>AI outreach drafting</li><li>E-signature</li></ul>
         <a class="btn ghost">Get started</a>
       </div>
+
       <div class="card popular">
         <div class="pop-label">&#10024; Most popular</div>
-        <div class="plan">Pro</div>
-        <div class="desc">For working teams</div>
-        <div class="price">$24 <span>/mo</span></div>
-        <ul><li>Unlimited projects</li><li>Priority support</li><li>Advanced analytics</li><li>Custom domains</li></ul>
+        <div class="plan">Festival</div>
+        <div class="desc">Conferences &amp; festivals</div>
+        <div class="band">Up to $250k raised</div>
+        <div class="price">$199 <span>/event</span></div>
+        <ul><li>Everything in Community</li><li>Proposals &amp; contracts</li><li>Sponsor portal &amp; fulfillment</li></ul>
         <a class="btn primary">Get started</a>
       </div>
+
       <div class="card">
-        <div class="plan">Scale</div>
-        <div class="desc">For growing companies</div>
-        <div class="price">$99 <span>/mo</span></div>
-        <ul><li>Everything in Pro</li><li>SSO + SAML</li><li>Audit logs</li><li>Dedicated manager</li></ul>
+        <div class="plan">Production</div>
+        <div class="desc">Multi-day productions</div>
+        <div class="band">Unlimited target</div>
+        <div class="price">$349 <span>/event</span></div>
+        <ul><li>Team seats</li><li>Priority support</li><li>Everything in Festival</li></ul>
         <a class="btn ghost">Get started</a>
       </div>
+
+      <div class="card">
+        <div class="plan">Success fee</div>
+        <div class="desc">Events or creators</div>
+        <div class="band">Pay per close</div>
+        <div class="price">1.5% <span>/ closed deal</span></div>
+        <ul><li>$0 to start</li><li>Pay only when you close</li><li>No event needed</li></ul>
+        <a class="btn ghost">Get started</a>
+      </div>
+
     </div>
   </div>
 </body>

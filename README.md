@@ -12,20 +12,20 @@ Two things set it apart. First, it does not stop at animation. A polished transi
 
 ## Before and after
 
-The same brief, the same plans, the same copy. The only variable is the design judgment. On the left is the look these models reach for by default; on the right is the same page with Taste applied.
+The same brief, the same four tiers, the same copy. The only variable is the design judgment. On the left is the look a model reaches for by default. On the right is the pricing page from a real product, the same standard applied.
 
 | Without the skill | With the skill |
 | --- | --- |
-| ![Pricing page in the default style: Inter, a purple gradient heading, a sparkle badge, three evenly weighted centered cards with a colored border on the popular tier](demo/before.png) | ![The same pricing page with Taste applied: a serif heading and monospace prices, a warm paper palette with one deep teal accent, and the recommended tier carrying real visual weight as a solid block](demo/after.png) |
+| ![Pricing page in the default style: Inter, an indigo gradient heading, a sparkle badge, four evenly weighted centered cards with a colored border on the popular tier](demo/before.png) | ![The same pricing as a real product surface: a tight display face, four tiers in one bordered table with corner registration marks, the recommended tier carrying weight through a tinted panel, an animated beam on its edge, and the one saturated button](demo/after.png) |
 
 What changed, and why:
 
-- **Type carries the signal.** A default SaaS sans for everything becomes a serif display heading, a grotesque for body, and a monospace for the prices. High contrast between two faces reads as intentional.
-- **A palette that means something.** The purple-to-blue gradient becomes warm paper, ink, and a single deep teal accent doing all the work. No gradient, no second color competing.
-- **Weight maps to truth.** The recommended tier stops being a card with a colored border and becomes the solid, saturated block. The quieter tiers step back instead of the loud one being toned down.
-- **The tells are gone.** No sparkle icon, no centered-everything, no drop shadow on every card. Depth is one deliberate elevation on the tier that earns it.
+- **Type carries the signal.** One SaaS sans doing every job becomes a tight display face for the headline and prices with small tracked labels for the metadata. The contrast lives between roles, not in a single weight straining to do all of it.
+- **Weight maps to truth.** Four near-identical cards with a colored border on the "popular" one become a layout that actually points: the recommended tier gets the tinted panel, a slow beam tracing its edge, and the only saturated button, while the rest stay quiet. The page guides instead of decorating.
+- **A detail language.** Solid pill features and a drop shadow under every card become dashed-outline capability chips, hairline dividers, and small corner registration marks on one bordered table. It reads as built, not assembled.
+- **Restraint with the brand color.** A gradient slathered across the heading and every button becomes one committed hue used at full strength only where it earns attention. Note that the "after" is still purple. Killing the generic default is about consideration, not banning a color; the difference is using it on purpose.
 
-Both are static mockups built to make the difference legible; the point is the judgment, not these exact pixels. The source is in [`demo/`](demo).
+The "after" is a faithful standalone build of a live product's pricing page, so this is craft on a real surface, not a toy made to win the comparison. The point is the judgment, not these exact pixels. Source for both is in [`demo/`](demo).
 
 ## What is inside
 
