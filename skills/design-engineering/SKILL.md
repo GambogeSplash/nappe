@@ -86,6 +86,8 @@ Motion should feel alive and purposeful, never like a loading spinner standing i
 
 For the full execution catalog (named easing curves, spring configs, `@starting-style` and WAAPI, `clip-path` reveals for tabs / hold-to-delete / scroll / comparison sliders, blur-masked crossfades, gesture velocity thresholds, the Framer Motion shorthand caveat, and debugging in slow motion), load [MOTION.md](MOTION.md).
 
+When motion or interaction outgrows CSS and needs a library (orchestrated React motion, scrubbed scroll choreography, interactive illustration, 3D, generative or shader work), load [INTERACTION.md](INTERACTION.md) for full recipes with Motion, GSAP, Rive, Three.js / React Three Fiber, p5.js / Canvas, and GLSL, each with its bundle budget, accessibility obligation, and reduced-motion fallback. Native first; reach for a tool only when the job needs it, and earn every kilobyte.
+
 ---
 
 ## Micro-interactions and feedback

@@ -1,14 +1,14 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "taste",
-  "description": "Taste: a portable design-engineering standard that turns Claude into a senior design engineer.",
+  "name": "nappe",
+  "description": "Nappe: a portable design-engineering standard that turns Claude into a senior design engineer.",
   "owner": {
     "name": "John Wright-Nyingifa",
     "url": "https://github.com/GambogeSplash"
   },
   "plugins": [
     {
-      "name": "taste",
+      "name": "nappe",
       "description": "Design-engineering standard: avoid generic AI defaults, motion that feels right, real accessibility, and a render-and-compare verification habit.",
       "author": {
         "name": "John Wright-Nyingifa"
@@ -17,7 +17,7 @@
       "source": {
         "source": "./"
       },
-      "homepage": "https://github.com/GambogeSplash/taste"
+      "homepage": "https://github.com/GambogeSplash/nappe"
     }
   ]
 }

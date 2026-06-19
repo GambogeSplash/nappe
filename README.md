@@ -1,12 +1,14 @@
-# Taste
+# Nappe
 
 A design-engineering standard for Claude. Drop it into a project and Claude does front-end and design work to a senior bar: considered visuals instead of generic defaults, motion that feels right, real accessibility, and the habit most AI design work skips, looking at the rendered result before calling it done.
+
+The name is the test. In a kitchen, *nappe* is the point where a sauce is thick enough to coat the back of a spoon: the proof it is actually finished, not merely cooked. That is the bar here. Not "the code looks done," but "I looked at it rendered and it is right."
 
 It is full-spectrum and vendor-neutral, and the depth is not only in motion. Each visual discipline carries the same two layers: a judgment-first summary in the main skill, and a deep execution catalog loaded on demand when a decision needs the exact value. Motion gets the battle-tested recipes (named easing curves, spring physics, interruptible transitions, `clip-path` reveals, GPU and main-thread traps, gesture thresholds) plus the current platform-native layer most guides have not caught up to (View Transitions, scroll-driven animations, animating `height: auto`, discrete-property exits, CSS `linear()` springs). Typography, color, and composition get the same treatment: type scales and pairing and optical correction; OKLCH ramps, tinted neutrals, and dark mode as a remap rather than an inversion; hierarchy, grid, and structure without reflexive cards. Through all of it runs the habit most AI design work skips: judging the result by looking at it rendered, not by reading the values. It teaches the reasoning a senior design engineer uses, not one person's house style, and gives the exact numbers to hit (motion durations, contrast ratios, hit targets, Core Web Vitals), then asks Claude to verify against them.
 
 ## Why
 
-Given a UI task with no direction, language models converge on the same look: a default SaaS sans, a purple gradient on white, evenly rounded cards, a centered hero, a sparkle icon on anything related to AI. It is competent and forgettable. Taste pushes past that average.
+Given a UI task with no direction, language models converge on the same look: a default SaaS sans, a purple gradient on white, evenly rounded cards, a centered hero, a sparkle icon on anything related to AI. It is competent and forgettable. Nappe pushes past that average.
 
 Two things set it apart. First, it does not stop at animation. A polished transition on top of a generic layout, the wrong typeface, and a broken empty state is still bad work, so the standard covers the whole decision, frame first. Second, it bakes in the one habit that separates code that "looks done" from work that is actually right: render it, screenshot it, compare it to the intent, and fix the gap. No upsell, no course to finish, no gated first response. It just does the work.
 
@@ -38,6 +40,7 @@ It is the kind of motion the standard argues for: an animated registered `@prope
 ```
 skills/design-engineering/SKILL.md        The standard itself, ready to use as a skill
 skills/design-engineering/MOTION.md        Deep motion catalog, loaded on demand
+skills/design-engineering/INTERACTION.md   Motion/interaction tooling recipes, loaded on demand
 skills/design-engineering/TYPOGRAPHY.md    Deep type catalog, loaded on demand
 skills/design-engineering/COLOR.md         Deep color catalog, loaded on demand
 skills/design-engineering/COMPOSITION.md   Deep layout catalog, loaded on demand
@@ -50,6 +53,7 @@ LICENSE                                    MIT
 The standard covers how to operate (frame first, kill the generic default, verify with your own eyes, finish the sweep), avoiding generic design, motion and animation, micro-interactions, interaction details, visual craft, accessibility, performance, and a pre-ship checklist. Each visual discipline keeps a judgment-first summary in the main skill and a deep execution catalog beside it, loaded only when a decision needs the exact value, so the main skill stays lean:
 
 - `MOTION.md`: named easing curves, spring configs, `@starting-style` and WAAPI, `clip-path` reveals, blur-masked crossfades, gesture thresholds, the 2026 platform-native layer, debugging.
+- `INTERACTION.md`: full recipes for when CSS is not enough, with Motion, GSAP, Rive, Three.js / React Three Fiber, p5.js / Canvas, and GLSL shaders, each carrying its bundle budget, accessibility obligation, and reduced-motion fallback.
 - `TYPOGRAPHY.md`: type scales by ratio, pairing rules, optical tracking, widow control, tabular figures, OpenType features, variable fonts, flash-free font loading.
 - `COLOR.md`: OKLCH ramps and tinted neutrals, semantic tokens, dark mode as a remap not an inversion, contrast in practice, `color-mix` and relative color.
 - `COMPOSITION.md`: hierarchy and the one entry point, the column grid, whitespace versus deliberate density, scannability, alignment, structure without reflexive cards.
@@ -64,13 +68,13 @@ Pick whichever fits how you use Claude. All are portable across stacks.
 
 ```bash
 # the standard
-npx skills add GambogeSplash/taste --skill design-engineering
+npx skills add GambogeSplash/nappe --skill design-engineering
 
 # the standard plus the companion review skill
-npx skills add GambogeSplash/taste --skill '*'
+npx skills add GambogeSplash/nappe --skill '*'
 
 # install for every project on your machine
-npx skills add GambogeSplash/taste --skill design-engineering -g
+npx skills add GambogeSplash/nappe --skill design-engineering -g
 ```
 
 It loads only when the work is actually design or front-end, so it never bloats unrelated sessions. Claude picks it up automatically when you ask for UI, frontend, components, animation, or visual design.
