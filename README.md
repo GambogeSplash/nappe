@@ -44,6 +44,8 @@ skills/design-engineering/INTERACTION.md   Motion/interaction tooling recipes, l
 skills/design-engineering/TYPOGRAPHY.md    Deep type catalog, loaded on demand
 skills/design-engineering/COLOR.md         Deep color catalog, loaded on demand
 skills/design-engineering/COMPOSITION.md   Deep layout catalog, loaded on demand
+skills/design-engineering/REFERENCES.md    Method for studying and borrowing across eras/cultures/disciplines
+skills/design-engineering/references/      Sourced dossiers on movements, eras, figures, and traditions
 skills/design-review/SKILL.md              Companion review skill, invoked explicitly when you want a critique
 .claude-plugin/plugin.json                 Plugin manifest, for installing as a Claude plugin
 README.md                                  This file
@@ -57,6 +59,7 @@ The standard covers how to operate (frame first, kill the generic default, verif
 - `TYPOGRAPHY.md`: type scales by ratio, pairing rules, optical tracking, widow control, tabular figures, OpenType features, variable fonts, flash-free font loading.
 - `COLOR.md`: OKLCH ramps and tinted neutrals, semantic tokens, dark mode as a remap not an inversion, contrast in practice, `color-mix` and relative color.
 - `COMPOSITION.md`: hierarchy and the one entry point, the column grid, whitespace versus deliberate density, scannability, alignment, structure without reflexive cards.
+- `REFERENCES.md`: how to study a movement, era, figure, or cultural tradition and borrow the tension that produced it rather than its surface, with a cross-disciplinary translation table (music, film, fashion, architecture, textile) and a deliberately global atlas. The growing `references/` folder holds sourced, cited dossiers built to a fixed seven-part template.
 
 A second skill, `design-review`, reviews a diff against the same bar and returns a findings table plus an explicit Block or Approve verdict. It does not auto-trigger; pull it in when you want a critique rather than a build.
 
